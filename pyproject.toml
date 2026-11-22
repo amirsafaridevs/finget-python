@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finget"
+version = "1.0.0"
+description = "Official Python SDK for the Finget passwordless login and notification API"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Finget", email = "support@finget.ir" },
+]
+keywords = [
+  "finget",
+  "login",
+  "otp",
+  "passwordless",
+  "notifications",
+  "iran",
+  "python",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://finget.ir"
+Documentation = "https://finget.ir/provider/panel/docs"
+Plugins = "https://finget.ir/plugins"
+Repository = "https://github.com/amirsafaridevs/finget-python"
+Issues = "https://github.com/amirsafaridevs/finget-python/issues"
+PyPI = "https://pypi.org/project/finget/"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+finget = ["py.typed"]
