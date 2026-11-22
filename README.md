@@ -67,6 +67,7 @@ site = finget.get_site()
 Example with a Flask-style flow:
 
 ```python
+import os
 from flask import Flask, redirect, request, session
 from finget import Client, ApiError
 
